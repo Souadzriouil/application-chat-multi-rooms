@@ -1,0 +1,29 @@
+{
+  "name": "multi-room-chat-app",
+  "version": "1.0.0",
+  "description": "Multi-room Chat Web Application built with NodeJS and socket.io",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "chat-app",
+    "multi-room-chat-app",
+    "multi-user-chat-app",
+    "nodejs",
+    "websockets",
+    "socket.io"
+  ],
+  "author": "Raj Asha",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mongodb": "^5.1.0",
+    "mongoose": "^7.0.2",
+    "socket.io": "^4.1.3"
+  }
+}
