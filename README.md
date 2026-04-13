@@ -32,7 +32,7 @@ This project demonstrates a real-time communication system using **WebSockets**.
 
 ### Chat Interface
 
-![Chat Interface](./chat-preview.png)
+<img width="1919" height="1018" alt="Screenshot_chat" src="https://github.com/user-attachments/assets/3359adff-f41b-429a-a1f3-820495e520b7" />
 
 > Users **Souad** and **Khaoula** chatting in real time inside the `#global` room. The sidebar shows active rooms (`#global`, `#chess`) and the online users list. Messages are bubble-styled and aligned by sender.
 
