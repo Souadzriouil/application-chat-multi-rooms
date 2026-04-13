@@ -135,16 +135,12 @@ Express Server (server.js)
 ## 👩‍💻 Author
 
 **Souad Zriouil**  
-📍 Settat, Morocco  
-📧 [souadzriouil02@gmail.com](mailto:souadzriouil02@gmail.com)  
-🐙 [github.com/Souadzriouil](https://github.com/Souadzriouil)
+AI Engineer | Data Scientist | Machine Learning | NLP | LLM  
+
+[![GitHub](https://img.shields.io/badge/GitHub-Souadzriouil-black?logo=github)](https://github.com/Souadzriouil)
 
 ---
 
 ## ⭐ Support
 
 If you find this project useful, feel free to **star** the repository — it helps others discover it and motivates further development! 🙌
-
----
-
-> Built with passion in Morocco 🇲🇦
