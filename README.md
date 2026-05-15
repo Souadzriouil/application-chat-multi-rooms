@@ -1,146 +1,232 @@
+<div align="center">
+
 # 💬 Multi-Room Chat Application
 
-> A real-time multi-room chat web application built with **Node.js**, **Express**, and **Socket.IO** — enabling instant messaging across multiple discussion spaces.
+### 🚀 Real-Time Multi-User Chat Platform with Room-Based Communication
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Java-Swing-orange?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Socket-Programming-blue?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Real--Time-Chat-success?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Multi--Room-Communication-purple?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Client--Server-Architecture-red?style=for-the-badge"/>
+</p>
+
+</div>
 
 ---
 
-## 🚀 Overview
+# 📌 Overview
 
-This project demonstrates a real-time communication system using **WebSockets**. Multiple users can connect simultaneously, create or join chat rooms, and exchange messages instantly.
+This project is a **real-time multi-room chat application** that enables multiple users to communicate simultaneously through different chat rooms.
 
-**Core goals of this project:**
+The application is based on a **client-server architecture** and provides an interactive communication environment where users can:
 
-- Real-time data handling with event-driven architecture
-- Seamless backend and frontend integration
-- Scalable room-based communication model
+- Join chat rooms
+- Exchange messages in real time
+- Communicate with multiple connected users
+- Manage room-based discussions
 
----
+The project demonstrates concepts related to:
 
-## ✨ Features
-
-- ⚡ Real-time messaging powered by Socket.IO
-- 🏠 Multiple chat rooms — join existing or create new ones
-- 👤 Username-based login system
-- 🔔 Join/leave notifications for room members
-- 📡 Instant message broadcasting
-- 🌐 Default global chat room on entry
-- 🔄 Event-driven architecture throughout
+- Socket Programming
+- Real-Time Communication
+- Client-Server Systems
+- Multi-threading
+- Network Programming
+- Graphical User Interfaces
 
 ---
 
-## 📸 Screenshots
+# 🚀 Main Features
 
-### Chat Interface
-
-<img width="1919" height="1018" alt="Screenshot_chat" src="https://github.com/user-attachments/assets/3359adff-f41b-429a-a1f3-820495e520b7" />
-
-> Users **Souad** and **Khaoula** chatting in real time inside the `#global` room. The sidebar shows active rooms (`#global`, `#chess`) and the online users list. Messages are bubble-styled and aligned by sender.
-
----
-
-## 🛠️ Tech Stack
-
-| Layer     | Technology            |
-|-----------|-----------------------|
-| Runtime   | Node.js               |
-| Framework | Express.js            |
-| WebSocket | Socket.IO             |
-| Frontend  | HTML, CSS, Vanilla JS |
+✅ Real-time messaging  
+✅ Multi-room communication  
+✅ Multiple connected users  
+✅ Client-server architecture  
+✅ Interactive graphical interface  
+✅ Real-time message broadcasting  
+✅ Room management system  
 
 ---
 
-## 📁 Project Structure
+# 🧰 Technologies Used
 
-```
+| Category | Technologies |
+|---|---|
+| Programming Language | Java |
+| GUI | Java Swing |
+| Networking | Java Sockets |
+| Architecture | Client-Server |
+| Communication | TCP/IP |
+
+---
+
+# 📂 Project Structure
+
+```bash
 application-chat-multi-rooms/
-├── public/
-│   ├── index.html       # Main chat interface
-│   ├── login.html       # Login / username entry page
-│   ├── app.js           # Frontend Socket.IO logic
-│   ├── login.js         # Login page interactions
-│   ├── style.css        # Chat interface styles
-│   ├── login.css        # Login page styles
-│   └── chat-app.png     # App preview image
-├── server.js            # Express + Socket.IO server
-├── package.json
-├── package-lock.json
-├── .gitignore
-└── README.md
+│
+├── src/
+│   ├── client/
+│   ├── server/
+│   └── ui/
+│
+├── screenshots/
+│   ├── login_interface.png
+│   ├── chat_room.png
+│   └── multi_user_demo.png
+│
+├── README.md
+└── .gitignore
 ```
 
 ---
 
-## ⚙️ Installation
+# ⚙️ System Workflow
 
-### 1. Clone the repository
+<div align="center">
+
+```text
+Client Connection
+        ↓
+Join Chat Room
+        ↓
+Real-Time Message Exchange
+        ↓
+Server Broadcasting
+        ↓
+Multi-User Communication
+```
+
+</div>
+
+---
+
+# 💬 Functionalities
+
+## 👥 Multi-User Communication
+
+Multiple users can connect and communicate simultaneously through the server.
+
+---
+
+## 🏠 Multi-Room System
+
+Users can join different chat rooms for organized discussions.
+
+---
+
+## ⚡ Real-Time Messaging
+
+Messages are instantly transmitted between connected clients using socket communication.
+
+---
+
+## 🖥️ Interactive GUI
+
+The application provides a user-friendly graphical interface for communication and room management.
+
+---
+
+# 📸 Application Preview
+
+## 💬 Chat Room Interface
+
+<p align="center">
+  <img src="screenshots/chat_room.png" width="850"/>
+</p>
+
+---
+
+## 👥 Multi-User Communication
+
+<p align="center">
+  <img src="screenshots/multi_user_demo.png" width="850"/>
+</p>
+
+---
+
+# 📦 Installation
+
+Clone the repository:
 
 ```bash
 git clone https://github.com/Souadzriouil/application-chat-multi-rooms.git
 cd application-chat-multi-rooms
 ```
 
-### 2. Install dependencies
+---
+
+# ▶️ Run the Project
+
+Compile the Java files:
 
 ```bash
-npm install
+javac *.java
 ```
 
-### 3. Start the server
+Run the server:
 
 ```bash
-npm start
+java Server
+```
+
+Run the client:
+
+```bash
+java Client
 ```
 
 ---
 
-## ▶️ Usage
+# 🧠 Concepts Demonstrated
 
-1. Open your browser and go to `http://localhost:3000`
-2. Enter your **username** on the login page
-3. You'll be placed in the default **#global** room automatically
-4. **Send messages** in real time — they appear instantly for all users in the room
-5. Browse the **Rooms** panel to join an existing room or create a new one with the `+` button
-
----
-
-## 🗺️ How It Works
-
-```
-Client (Browser)
-    │
-    │  WebSocket (Socket.IO)
-    ▼
-Express Server (server.js)
-    │
-    ├── on('join-room')    → broadcasts join notification to room
-    ├── on('send-message') → broadcasts message to room members
-    └── on('disconnect')   → broadcasts leave notification
-```
+- Socket Programming
+- Multi-threading
+- Real-Time Communication
+- TCP/IP Networking
+- Client-Server Architecture
+- GUI Development
+- Concurrent User Management
 
 ---
 
-## 🔮 Future Improvements
+# 🔮 Future Improvements
 
-- [ ] Authentication system (JWT or Firebase)
-- [ ] Message persistence (MongoDB or PostgreSQL)
-- [ ] Online users list per room
-- [ ] Typing indicator (`User is typing...`)
-- [ ] File and image sharing
-- [ ] Modern UI redesign
-- [ ] Cloud deployment (Railway, Render, or Vercel)
-- [ ] AI chatbot integration per room
+- User authentication system
+- Private messaging
+- File sharing support
+- Database integration
+- Voice and video communication
+- Encryption and security features
 
 ---
 
-## 👩‍💻 Author
+# 👩‍💻 Author
 
-**Souad Zriouil**  
-AI Engineer | Data Scientist | Machine Learning | NLP | LLM  
+<div align="center">
 
-[![GitHub](https://img.shields.io/badge/GitHub-Souadzriouil-black?logo=github)](https://github.com/Souadzriouil)
+## Souad Zriouil
+
+### AI Engineer | Data Scientist | Software & AI Enthusiast
+
+<p align="center">
+  <a href="https://github.com/Souadzriouil">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
+  </a>
+
+  <a href="https://www.linkedin.com/in/souad-zriouil-54b19b267">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
+  </a>
+</p>
+
+</div>
 
 ---
 
-## ⭐ Support
+<div align="center">
 
-If you find this project useful, feel free to **star** the repository — it helps others discover it and motivates further development! 🙌
+⭐ If you like this project, feel free to star the repository.
+
+</div>
